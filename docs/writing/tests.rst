@@ -1,11 +1,11 @@
 Testing Your Code
 =================
 
-.. image:: https://farm5.staticflickr.com/4166/34435687940_8f73fc1fa6_k_d.jpg
+.. image:: /_static/photos/34435687940_8f73fc1fa6_k_d.jpg
 
 Testing your code is very important.
 
-Getting used to writing testing code and running this code in parallel is now 
+Getting used to writing testing code and running this code in parallel is now
 considered a good habit. Used wisely, this method helps you define more
 precisely your code's intent and have a more decoupled architecture.
 
@@ -29,7 +29,7 @@ Some general rules of testing:
   tests as often as needed.
 
 - Learn your tools and learn how to run a single test or a test case. Then,
-  when developing a function inside a module, run this function's tests 
+  when developing a function inside a module, run this function's tests
   frequently, ideally automatically when you save the code.
 
 - Always run the full test suite before a coding session, and run it again
@@ -65,10 +65,10 @@ Some general rules of testing:
 
 - Another use of the testing code is as an introduction to new developers. When
   someone will have to work on the code base, running and reading the related
-  testing code is often the best thing that they can do to start. They will 
-  or should discover the hot spots, where most difficulties arise, and the 
-  corner cases. If they have to add some functionality, the first step should 
-  be to add a test to ensure that the new functionality is not already a 
+  testing code is often the best thing that they can do to start. They will
+  or should discover the hot spots, where most difficulties arise, and the
+  corner cases. If they have to add some functionality, the first step should
+  be to add a test to ensure that the new functionality is not already a
   working path that has not been plugged into the interface.
 
 The Basics
@@ -190,21 +190,38 @@ the unittest module!
     `py.test <https://docs.pytest.org/en/latest/>`_
 
 
-Nose
-----
+Hypothesis
+----------
 
-nose extends unittest to make testing easier.
-
+Hypothesis is a library which lets you write tests that are parametrized by
+a source of examples.  It then generates simple and comprehensible examples
+that make your tests fail, letting you find more bugs with less work.
 
 .. code-block:: console
 
-    $ pip install nose
+    $ pip install hypothesis
 
-nose provides automatic test discovery to save you the hassle of manually
-creating test suites. It also provides numerous plugins for features such as
-xUnit-compatible test output, coverage reporting, and test selection.
+For example, testing lists of floats will try many examples, but report the
+minimal example of each bug (distinguished exception type and location):
 
-    `nose <https://nose.readthedocs.io/en/latest/>`_
+.. code-block:: python
+
+    @given(lists(floats(allow_nan=False, allow_infinity=False), min_size=1))
+    def test_mean(xs):
+        mean = sum(xs) / len(xs)
+        assert min(xs) <= mean(xs) <= max(xs)
+
+.. code-block:: none
+
+    Falsifying example: test_mean(
+        xs=[1.7976321109618856e+308, 6.102390043022755e+303]
+    )
+
+Hypothesis is practical as well as very powerful, and will often find bugs
+that escaped all other forms of testing.  It integrates well with py.test,
+and has a strong focus on usability in both simple and advanced scenarios.
+
+    `hypothesis <https://hypothesis.readthedocs.io/en/latest/>`_
 
 
 tox

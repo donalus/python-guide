@@ -1,7 +1,7 @@
 Learning Python
 ===============
 
-.. image:: https://farm3.staticflickr.com/2840/32800783863_11a00db52c_k_d.jpg
+.. image:: /_static/photos/32800783863_11a00db52c_k_d.jpg
 
 Beginner
 --------
@@ -15,6 +15,21 @@ quick-start guide to the language.
 
     `The Python Tutorial <http://docs.python.org/tutorial/index.html>`_
 
+Real Python
+~~~~~~~~~~~
+
+Real Python is a repository of free and in-depth Python tutorials created by a diverse team of professional Python developers. At Real Python you can learn all things Python from the ground up. Everything from the absolute basics of Python, to web development and web scraping, to data visualization, and beyond.
+
+    `Real Python <https://realpython.com/>`_
+
+
+Python Basics
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+pythonbasics.org is an introductiory tutorial for beginners. The tutorial includes exercises. It covers the basics and there are also in-depth lessons like object oriented programming and regular expressions.
+
+   `Python basics <https://pythonbasics.org/>`_
+
 Python for Beginners
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
@@ -24,14 +39,6 @@ At last it finishes off with  tutorial "How to access MySQL db using python"
 
 
    `Python for beginners <http://thepythonguru.com/>`_
-
-Learn Python for Data Science Interactively
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
-If you prefer an online interactive environment to learn Python for Data Science, `this free python tutorial by DataCamp <https://www.datacamp.com/courses/intro-to-python-for-data-science?tap_a=5644-dce66f&tap_s=116411-750171>`_ is a great way to get started. If you're already somewhat advanced and interested in machine learning, check out this `course on Supervised Learning with scikit-learn <https://www.datacamp.com/courses/supervised-learning-with-scikit-learn?tap_a=5644-dce66f&tap_s=116411-750171>`_, by one the core developers of scikit-learn.
-
-
-`Python for data science <http://datacamp.com/?tap_a=5644-dce66f&tap_s=116411-750171>`_
 
 Learn Python Interactive Tutorial
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -44,12 +51,17 @@ without having to install Python locally.
 
     `Learn Python <http://www.learnpython.org/>`_
 
-
 If you want a more traditional book, *Python For You and Me* is an excellent
 resource for learning all aspects of the language.
 
     `Python for You and Me <https://pymbook.readthedocs.io/>`_
-    `Learn Python Interactively with DataCamp! <https://www.datacamp.com/>`_
+
+Learn Python Step by Step
+~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Techbeamers.com provides step-by-step tutorials to teach Python. Each tutorial is supplemented with logically added coding snippets and equips with a follow-up quiz on the subject learned. There is a section for `Python interview questions <http://www.techbeamers.com/python-interview-questions-programmers>`_ to help job seekers. You can also read essential `Python tips <http://www.techbeamers.com/essential-python-tips-tricks-programmers>`_ and learn `best coding practices <http://www.techbeamers.com/python-code-optimization-tips-tricks>`_ for writing quality code. Here, you'll get the right platform to learn Python quickly.
+
+`Learn Python Basic to Advanced <http://www.techbeamers.com/python-tutorial-step-by-step>`_
 
 
 Online Python Tutor
@@ -169,8 +181,29 @@ This course also features a built-in interpreter for receiving instant feedback 
     `Learn to Program in Python with Codeacademy <http://www.codecademy.com/en/tracks/python>`_
 
 
+Code the blocks
+~~~~~~~~~~~~~~~
+
+*Code the blocks* provides free and interactive Python tutorials for
+beginners. It combines Python programming with a 3D environment where
+you "place blocks" and construct structures. The tutorials teach you
+how to use Python to create progressively elaborate 3D structures,
+making the process of learning Python fun and engaging.
+
+    `Code the blocks <https://codetheblocks.com/tutorials/introduction>`_
+
+
 Intermediate
 ------------
+
+Python Tricks: The Book
+~~~~~~~~~~~~~~~~~~~~~~~
+
+Discover Python's best practices with simple examples and start writing even more beautiful + Pythonic code. "Python Tricks: The Book" shows you exactly how.
+
+You’ll master intermediate and advanced-level features in Python with practical examples and a clear narrative:
+
+    `Python Tricks: The Book <https://realpython.com/products/python-tricks-book/>`_
 
 Effective Python
 ~~~~~~~~~~~~~~~~
@@ -224,7 +257,7 @@ and can make classes and objects behave in different and magical ways.
 
 .. note:: The Rafekettler.com is currently down, you can go to their Github version directly. Here you can find a PDF version:
     `A Guide to Python's Magic Methods (repo on GitHub) <https://github.com/RafeKettler/magicmethods/blob/master/magicmethods.pdf>`_
-    
+
 
 
 For Engineers and Scientists

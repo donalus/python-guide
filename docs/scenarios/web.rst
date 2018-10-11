@@ -2,7 +2,7 @@
 Web Applications & Frameworks
 =============================
 
-.. image:: https://farm3.staticflickr.com/2891/34309496175_b82d104282_k_d.jpg
+.. image:: /_static/photos/34309496175_b82d104282_k_d.jpg
 
 As a powerful scripting language adapted to both fast prototyping
 and bigger projects, Python is widely used in web application
@@ -62,7 +62,7 @@ modules <http://djangopackages.com/>`_ that can be incorporated into a new
 project as-is, or customized to fit your needs.
 
 There are annual Django conferences `in the United States
-<http://djangocon.us>`_ and `in Europe <http://djangocon.eu>`_.
+<http://djangocon.us>`_, `Europe <http://djangocon.eu>`_, and `Australia <http://djangocon.com.au>`_.
 
 The majority of new Python web applications today are built with Django.
 
@@ -91,6 +91,19 @@ suit your needs. Or, you can easily use any library you want yourself!
 Flask is default choice for any Python web application that isn't a good
 fit for Django.
 
+Falcon
+------
+
+`Falcon <https://falconframework.org/>`_ is a good choice when your goal is
+to build RESTful API microservices that are fast and scalable.
+
+It is a reliable, high-performance Python web framework for building large-scale
+app backends and microservices. Falcon encourages the REST architectural style of
+mapping URIs to resources, trying to do as little as possible while remaining highly effective.
+
+Falcon highlights four main focuses: speed, reliability, flexibility and debuggability.
+It implements HTTP through "responders" such as ``on_get()``, ``on_put()``, etc.
+These responders receive intuitive request and response objects.
 
 Tornado
 --------
@@ -107,11 +120,25 @@ Pyramid
 
 `Pyramid <https://trypyramid.com/>`_ is a very flexible framework with a heavy
 focus on modularity. It comes with a small number of libraries ("batteries")
-built-in, and encourages users to extend its base functionality.
+built-in, and encourages users to extend its base functionality. A set of
+provided cookiecutter templates helps making new project decisions for users.
+It poweres one of the most important parts of python infrastucture
+`PyPI <http://pypi.org/>`_.
 
 Pyramid does not have a large user base, unlike Django and Flask. It's a
 capable framework, but not a very popular choice for new Python web
 applications today.
+
+Masonite
+--------
+
+`Masonite <https://docs.masoniteproject.com>`_ is a modern and developer centric, "batteries included", web framework. 
+
+The Masonite framework follows the MVC (Model-View-Controller) architecture pattern and is heavily inspired by frameworks such as Rails and Laravel, so if you are coming to Python from a Ruby or PHP background then you will feel right at home!
+
+Masonite comes with a lot of functionality out of the box including a powerful IOC container with auto resolving dependency injection, craft command line tools and the Orator active record style ORM.
+
+Masonite is perfect for beginners or experienced developers alike and works hard to be fast and easy from install through to deployment. Try it once and you’ll fall in love.
 
 Web Servers
 :::::::::::

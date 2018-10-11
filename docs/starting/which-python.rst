@@ -1,7 +1,7 @@
-Picking an Python Interpreter (3 vs. 2)
-=======================================
+Picking a Python Interpreter (3 vs 2)
+=====================================
 
-.. image:: https://farm5.staticflickr.com/4265/34484834733_5b80f65ab1_k_d.jpg
+.. image:: /_static/photos/34484834733_5b80f65ab1_k_d.jpg
 
 .. _which-python:
 
@@ -58,7 +58,9 @@ It is possible to `write code that works on Python 2.6, 2.7, and Python 3
 <https://docs.python.org/3/howto/pyporting.html>`_. This
 ranges from trivial to hard depending upon the kind of software
 you are writing; if you're a beginner there are far more important things to
-worry about.
+worry about.  Note that Python 2.6 is end-of-life upstream, so you shouldn't
+try to write 2.6-compatible code unless you're being paid specifically to
+do that.
 
 Implementations
 ~~~~~~~~~~~~~~~
